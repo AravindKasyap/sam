@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart Dustbin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    float: right;
+    transform: translate(-50%, -50%);
+}
+.jumbotron
+{
+    background: none;
+    border-radius:14 ;
+    height: auto;
+}
+@media screen and (max-width: 965px)
+{
+.heading {
+    font-size: 24px;
+}
+.heading1
+{
+font-size:20px;
+}
+.heading2
+{
+font-size:20px;
+}
+}
+@media screen and (max-width: 879px)
+{
+.heading {
+    font-size: 16px;
+}
+.heading1
+{
+font-size:16px;
+}
+.heading2
+{
+font-size:16px;
+}
+}
+@media screen and (max-width:630px)
+{
+.heading {
+    font-size: 15px;
+}
+.heading1
+{
+font-size:8px;
+}
+.heading2
+{
+font-size:8px;
+}
+}
+@media screen and (max-width:560px)
+{
+.heading {
+    font-size: 15px;
+}
+.heading1
+{
+visibility: none;
+display: none;
+}
+.heading2
+{
+font-size:8px;
+}
+}
+@media screen and (max-width:410px)
+{
+.heading {
+ font-size:16px;
+}
+.heading1
+{
+visibility: none;
+display: none;
+}
+.heading2
+{
+visibility: none;
+display: none;
+}
+}
+.contalmer{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+.imgopac
+{
+opacity: 0.5;
+height: 100%;
+}
+
+  </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="contalmer ">
+    <img class="img-responsive imgopac" src="b.png" alt="Snow" style="width: 100%;opacity: 1;">
+  <div class="jumbotron centered">
+    <center><h1 class="heading"style="color:greenyellow;">Smart Garbage Collection</h1> </center>    
+    <center><p class="heading1"style="color:white;font-weight: bolder;font-family: cursive;">Everything in the universe is getting smarter, why not your Dustbin and garbage collection unit.</p></center>
+    <center><p class="heading2"style="color:white;font-weight: bolder;font-family: cursive;">Introducing Smart SMS system for garbage collection. </p></center>
+    <center><button class="but"style="background:black;font-size:24px;border-radius: 10px;color: white;margin-top: 3px;">Track</button></center>
+
+  </div>
+  </div>
+<section id="tracking" style="margin-top:30px;">
+  <div class="container">
+      <center><h1 style="color:black;margin-top: 30px;">Dustbin Status</h1> </center>  
+      <h1 style="margin-bottom:80px;"></h1>
+      <iframe width="100%" height="768" frameborder="0" src="https://industrial.ubidots.com/app/dashboards/public/widget/TvMt-AgvTzZPzsaSnAZ3lJHpvxY?embed=true"></iframe>  
+
+
+  </div> 
+</section>   
+</div>
+
+</body>
+</html>
+
